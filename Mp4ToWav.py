@@ -10,7 +10,7 @@ for root, dirs, files in os.walk("./folder", topdown=False):
             
             # Using ffmpeg to convert the mp4 in wav
             # Example command: "ffmpeg -i C:/test.mp4 -ab 160k -ac 2 -ar 44100 -vn audio.wav"
-            command = "ffmpeg -i /Users/marcogdepinto/Desktop" + root[1:] + "/" + name + " " + "-ab 160k -ac 2 -ar 44100 -vn /Users/marcogdepinto/Desktop/ConvertedFolder/" +  name[:-3] + "wav"
+            command = "ffmpeg -i ./test.mp4" + root[1:] + "/" + name + " " + "-ab 160k -ac 2 -ar 44100 -vn ./data/Test/audio.wav" +  name[:-3] + "wav"
             
             #print(command)
             
